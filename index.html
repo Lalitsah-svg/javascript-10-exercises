@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beginner-friendly collection of 10 JavaScript exercises covering arrays, objects, functions, and DOM manipulation.">
+  <title>JavaScript Practice Lab | 10 Exercises</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">JAVASCRIPT FUNDAMENTALS</p>
+      <h1>Practice Lab<span>.</span></h1>
+      <p class="subtitle">10 exercises covering arrays, objects, functions, and the DOM.</p>
+      <div class="header-meta">
+        <span>10 exercises</span><span>4 core topics</span><span>Browser-ready</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro panel">
+      <div>
+        <p class="section-kicker">YOUR WORKSPACE</p>
+        <h2>Learn by doing.</h2>
+        <p>Each card demonstrates a small JavaScript concept. Select a button to run an example, or use the DOM controls to interact with the page.</p>
+      </div>
+      <div class="progress" aria-label="10 exercises included">
+        <strong>10</strong><span>completed<br>examples</span>
+      </div>
+    </section>
+
+    <section class="topic-section" aria-labelledby="arrays-heading">
+      <div class="section-heading"><div><p class="section-kicker">01 / DATA COLLECTIONS</p><h2 id="arrays-heading">Arrays</h2></div><span class="topic-count">3 exercises</span></div>
+      <div class="card-grid">
+        <article class="exercise-card">
+          <span class="number">01</span><h3>Sum an array</h3>
+          <p>Add all numbers in an array using <code>reduce()</code>.</p>
+          <div class="example">Input: <code>[4, 8, 3, 5]</code></div>
+          <button type="button" data-action="array-sum">Run exercise</button>
+          <p class="result" id="result-array-sum" aria-live="polite">Result will appear here.</p>
+        </article>
+        <article class="exercise-card">
+          <span class="number">02</span><h3>Find the maximum</h3>
+          <p>Find the largest value in a numeric array.</p>
+          <div class="example">Input: <code>[12, 7, 29, 4, 18]</code></div>
+          <button type="button" data-action="array-max">Run exercise</button>
+          <p class="result" id="result-array-max" aria-live="polite">Result will appear here.</p>
+        </article>
+        <article class="exercise-card">
+          <span class="number">03</span><h3>Remove duplicates</h3>
+          <p>Keep only unique values using a <code>Set</code>.</p>
+          <div class="example">Input: <code>["JS", "HTML", "JS"]</code></div>
+          <button type="button" data-action="array-unique">Run exercise</button>
+          <p class="result" id="result-array-unique" aria-live="polite">Result will appear here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic-section" aria-labelledby="objects-heading">
+      <div class="section-heading"><div><p class="section-kicker">02 / KEY-VALUE DATA</p><h2 id="objects-heading">Objects</h2></div><span class="topic-count">2 exercises</span></div>
+      <div class="card-grid">
+        <article class="exercise-card">
+          <span class="number">04</span><h3>Student profile</h3>
+          <p>Read and display values from a student object.</p>
+          <div class="example">Object: <code>student</code></div>
+          <button type="button" data-action="object-student">Run exercise</button>
+          <p class="result" id="result-object-student" aria-live="polite">Result will appear here.</p>
+        </article>
+        <article class="exercise-card">
+          <span class="number">05</span><h3>Count properties</h3>
+          <p>Count an object's own enumerable properties.</p>
+          <div class="example">Method: <code>Object.keys()</code></div>
+          <button type="button" data-action="object-count">Run exercise</button>
+          <p class="result" id="result-object-count" aria-live="polite">Result will appear here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic-section" aria-labelledby="functions-heading">
+      <div class="section-heading"><div><p class="section-kicker">03 / REUSABLE LOGIC</p><h2 id="functions-heading">Functions</h2></div><span class="topic-count">2 exercises</span></div>
+      <div class="card-grid">
+        <article class="exercise-card">
+          <span class="number">06</span><h3>Even or odd</h3>
+          <p>Use the remainder operator to classify a number.</p>
+          <label for="even-number">Enter a whole number</label>
+          <input id="even-number" type="number" step="1" value="17">
+          <button type="button" data-action="function-even">Check number</button>
+          <p class="result" id="result-function-even" aria-live="polite">Result will appear here.</p>
+        </article>
+        <article class="exercise-card">
+          <span class="number">07</span><h3>Calculate factorial</h3>
+          <p>Calculate the factorial of a non-negative integer.</p>
+          <label for="factorial-number">Enter a number (0–18)</label>
+          <input id="factorial-number" type="number" min="0" max="18" step="1" value="5">
+          <button type="button" data-action="function-factorial">Calculate factorial</button>
+          <p class="result" id="result-function-factorial" aria-live="polite">Result will appear here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="topic-section" aria-labelledby="dom-heading">
+      <div class="section-heading"><div><p class="section-kicker">04 / BROWSER INTERACTION</p><h2 id="dom-heading">DOM Manipulation</h2></div><span class="topic-count">3 exercises</span></div>
+      <div class="card-grid">
+        <article class="exercise-card">
+          <span class="number">08</span><h3>Update a heading</h3>
+          <p>Change an element's text with JavaScript.</p>
+          <h4 id="demo-heading">This heading is ready to change.</h4>
+          <button type="button" data-action="dom-heading">Change heading</button>
+          <p class="result" id="result-dom-heading" aria-live="polite">Click to update the heading.</p>
+        </article>
+        <article class="exercise-card">
+          <span class="number">09</span><h3>Add list items</h3>
+          <p>Create and append a new list item from input.</p>
+          <label for="item-input">New list item</label>
+          <div class="input-row"><input id="item-input" type="text" maxlength="60" placeholder="e.g. Learn JavaScript"><button type="button" data-action="dom-add-item">Add</button></div>
+          <ul id="demo-list"><li>Practice consistently</li><li>Test your code</li></ul>
+          <p class="result" id="result-dom-add-item" aria-live="polite">Add an item to the list.</p>
+        </article>
+        <article class="exercise-card">
+          <span class="number">10</span><h3>Interactive counter</h3>
+          <p>Handle click events and update a number on screen.</p>
+          <div class="counter" aria-live="polite"><button type="button" aria-label="Decrease counter" data-action="counter-decrease">−</button><strong id="counter-value">0</strong><button type="button" aria-label="Increase counter" data-action="counter-increase">+</button></div>
+          <button type="button" class="secondary-button" data-action="counter-reset">Reset counter</button>
+          <p class="result" id="result-dom-counter" aria-live="polite">Counter is ready.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reflection panel">
+      <p class="section-kicker">REFLECTION</p>
+      <h2>What I learned</h2>
+      <p>These exercises helped me practise array methods, object properties, reusable functions, input validation, and DOM event handling. I also learned to display results clearly, test different inputs, and keep HTML, CSS, and JavaScript in separate files.</p>
+      <p class="note-link">A longer submission note is included in <code>WHAT_I_LEARNED.md</code>.</p>
+    </section>
+  </main>
+
+  <footer><p>JavaScript Practice Lab · Beginner exercise project</p></footer>
+</body>
+</html>

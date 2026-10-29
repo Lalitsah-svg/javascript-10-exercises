@@ -1,0 +1,3 @@
+# What I Learned
+
+While completing these ten JavaScript exercises, I practised working with arrays, objects, functions, and the Document Object Model (DOM). I learned how to use methods such as `reduce()`, `Math.max()`, `Set`, and `Object.keys()` to process data; how to write reusable functions with return values and input validation; and how to respond to browser events to update page content dynamically. I also learned to keep HTML, CSS, and JavaScript in separate files, display user-provided text safely with `textContent`, and test normal as well as invalid inputs. These exercises improved my understanding of how JavaScript logic connects to an interactive webpage.
